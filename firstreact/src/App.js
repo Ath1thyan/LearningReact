@@ -1,47 +1,32 @@
 import './App.css';
 
+const data = [
+  { name: "Anom", age: 19, gender: "Male" },
+  { name: "Megha", age: 19, gender: "Female" },
+  { name: "Subham", age: 25, gender: "Male" },
+]
 function App() {
   return (
     <div className="App">
-    <div class="header"></div>
+      <div class="header"></div>
     <div class="content">
         <div class="content-left"></div>
         <div class="content-right">
             <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Gender</th>
-                        <th>Age</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>Male</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>Sam</td>
-                        <td>Male</td>
-                        <td>19</td>
-                    </tr>
-                    <tr>
-                        <td>Mary</td>
-                        <td>Female</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Peter</td>
-                        <td>Male</td>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>Lisa</td>
-                        <td>Female</td>
-                        <td>22</td>
-                    </tr>
-                </tbody>
+              <tr>
+                  <th>Name</th>
+                  <th>Gender</th>
+                  <th>Age</th>
+              </tr>
+              {data.map((val, key) => {
+                    return (
+                        <tr key={key}>
+                            <td>{val.name}</td>
+                            <td>{val.age}</td>
+                            <td>{val.gender}</td>
+                        </tr>
+                    )
+                })}
             </table>
         </div>
     </div>
