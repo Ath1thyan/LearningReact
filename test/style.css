@@ -1,0 +1,50 @@
+.header{
+    margin: 0px;
+    padding: 0px;
+    background-color: red;
+    width: 100%;
+    height: 15vh;
+}
+.content{
+    margin: 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.content-left{
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+.content-right{
+    margin: 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(106, 106, 224);
+    font-size: 1.5rem;
+}
+table {
+    width: 800px;
+    height: 200px;
+}
+td {
+    text-align: center;
+}
+
+.footer{
+    margin: 0px;
+    padding: 0px;
+    background-color: blue;
+    width: 100%;
+    height: 15vh;
+}
