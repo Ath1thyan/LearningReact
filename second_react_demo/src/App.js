@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Auth from './pages/Auth'
 
 function App() {
+  let Model = "A4";
+
+  let cars = {"cars" : [{"Brand" : "Volvo", "Model" : "XC60"}, {"Brand" : "BMW", "Model" : "i7"}, {"Brand" : "Porsche", "Model" : "cayenne"}]}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Auth car_brand = "Audi"  car_model = {Model} />
     </div>
   );
 }
