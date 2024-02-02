@@ -8,7 +8,7 @@ function App() {
   let cars = {"cars" : [{"Brand" : "Volvo", "Model" : "XC60"}, {"Brand" : "BMW", "Model" : "i7"}, {"Brand" : "Porsche", "Model" : "cayenne"}]}
   return (
     <div className="App">
-      <Auth car_brand = "Audi"  car_model = {Model} />
+      <Auth car_brand = "Audi"  car_model = {Model} {...cars} />
     </div>
   );
 }
