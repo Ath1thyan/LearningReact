@@ -28,10 +28,11 @@ class Auth extends React.Component {
                     </thead>
                     <tbody>
                         {cars.map((brand, model) => {
+                            return (()=>
                             <tr>
                                 <td>{cars.car_brand}</td>
                                 <td>{cars.car_model}</td>
-                            </tr>
+                            </tr>)
                         })}
                     </tbody>
                 </table>
