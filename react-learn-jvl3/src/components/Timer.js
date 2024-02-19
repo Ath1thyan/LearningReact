@@ -4,8 +4,12 @@ function Timer() {
     const [count, setCount] = useState(0);
     useEffect( () => {
         console.log("screen rendered")
-        checkCount()
-    }, [count]);
+        // checkCount()
+        // setCount(1)
+        setTimeout( () => {
+            setCount( (prev) => { return prev + 1} )
+        }, 1000)
+    });
 
     function checkCount() {
         if (count > 10){
@@ -14,7 +18,7 @@ function Timer() {
     }
 
     function updateCount() {
-        setCount((preCount) => {return preCount + 1})
+        setCount((preCount) => {return preCount+1})
     }
 
     return <>
