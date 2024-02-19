@@ -6,12 +6,13 @@ function Garage(){
     // const color = 'Black';
 
     const carInfo = { brand : "Ferrari", color : "Black" };
+    const appleInfo = { type : "Fuji", color: "Red"};
     return (
       <>
         <h1>Who lives inside my  garage?</h1>
         {/* <Car carBrand = {brand} carColor = {color} /> */}
         <Car carInfo = {carInfo} />
-        <Apple/>
+        <Apple appleInfo = {appleInfo} />
       </>
     )
   }
