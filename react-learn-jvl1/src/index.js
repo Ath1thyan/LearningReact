@@ -4,9 +4,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function Car(){
+  return (
+    <h2>Hi! I  am a Car.</h2>
+  )
+}
+
+function Garage(){
+  return (
+    <div>
+      <h1>Who lives inside my  garage?</h1>
+      <Car/>
+    </div>
+  )
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Garage />
     <App />
   </React.StrictMode>
 );
