@@ -11,6 +11,16 @@ function Garage(){
     const appleInfo = { type : "Fuji", color: "Red"};
 
     const showCarInfo = carInfo.brand !== undefined && carInfo.color !== undefined;
+
+    const carList = [
+        { brand : "BMW", color : "White" },
+        { brand : "Mercedes", color : "Blue" },
+        { brand : "Audi", color : "White" },
+        { brand : "Volvo", color : "Black" },
+    ];
+
+    const numList = [1,2,3,4,5,6,7,8,9,10];
+
     return (
       <>
         <h1>Who lives inside my  garage?</h1>
@@ -25,10 +35,22 @@ function Garage(){
         { showCarInfo &&
             <Car carInfo = {carInfo} /> 
         }
+
         <Apple appleInfo = {appleInfo} />
+
         { isOpened ? 
             <h2>Garage door is opened</h2> : <h2>Garage  door is closed</h2>
         }
+
+        <ul>
+            { carList.map((carInfo) => <li key={carInfo.brand} ><Car carInfo={carInfo}/></li>)}
+            {/* { carList.map((carInfo) => <li><Car carInfo={carInfo}/></li>)} */}
+            {/* { carList.map(() => {return <li><Car/></li>})} */}
+        </ul>
+
+        <ul>
+            {numList.map((num, index) => {return <p key={index}>{num}</p>})}
+        </ul>
       </>
     )
   }

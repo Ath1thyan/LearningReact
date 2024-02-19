@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Garage from './components/Garage';
-
+// import Garage from './components/Garage';
+import Header from './components/Header';
 
 
 
@@ -12,8 +12,9 @@ import Garage from './components/Garage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Garage />
-    <App />
+    {/* <Garage /> */}
+    {/* <App /> */}
+    <Header/>
   </React.StrictMode>
 );
 
