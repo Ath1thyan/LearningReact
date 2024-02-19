@@ -9,7 +9,23 @@ function Scooty() {
             model: "Activa",
             year: "2020"
         }
-    )
+    );
+
+    function updateColor(){
+        // setScooty({color : "blue"})
+        // setScooty((previousState) => {
+        //     return {
+        //         ...previousState,
+        //          color: "blue"
+        //     }
+        // })
+        setScooty(previousState => {
+            return {
+                ...previousState,
+                 model: "splender+"
+            }
+        })
+    }
 
     console.log("Current State : ", scooty);
 
@@ -20,7 +36,8 @@ function Scooty() {
         <p>Model : {scooty.model}</p>
         <p>Year : {scooty.year}</p>
 
-        <button onClick={() => {setScooty({color:"Blue", brand:"ymaha", model:"FZ5", year:"2021"})}} >change</button>
+        {/* <button onClick={() => {setScooty({color:"Blue", brand:"ymaha", model:"FZ5", year:"2021"})}} >change</button> */}
+        <button onClick={updateColor}>change</button>
     </>
 }
 

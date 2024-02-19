@@ -7,6 +7,7 @@ import FavCol from './components/FavColor';
 import Car from './components/Car';
 import Scooter from './components/Scooter';
 import Scooty from './components/Scooty';
+import List from './components/List';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
     <Car />
     <Scooter/>
     <Scooty/>
+    <List/>
   </>
 );
 
