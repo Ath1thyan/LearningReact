@@ -1,3 +1,5 @@
+import './css/Header.css';
+
 function Header() {
     const myStyle = {
         color : "red", 
