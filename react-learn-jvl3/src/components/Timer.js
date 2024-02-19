@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
 
 function Timer() {
+    const [count, setCount] = useState(0);
     useEffect( () => {
         console.log("screen rendered")
-    }, []);
-    const [count, setCount] = useState(0);
+        checkCount()
+    }, [count]);
+
+    function checkCount() {
+        if (count > 10){
+            setCount(1)
+        }
+    }
 
     function updateCount() {
         setCount((preCount) => {return preCount + 1})
