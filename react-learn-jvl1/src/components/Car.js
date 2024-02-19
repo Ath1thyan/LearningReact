@@ -1,6 +1,8 @@
 function Car(){
+    const brand = 'Ford';
+    const text = `Hi! I  am a ${brand} Car.`;
     return (
-      <h2>Hi! I  am a Car.</h2>
+      <h2> {text} </h2>
     )
   }
 
