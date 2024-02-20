@@ -6,7 +6,7 @@ function MyForm() {
     // const [age, setAge] = useState("");
     // const [email, setEmail] = useState("");
 
-    const [inputs, setInputs] = useState({});
+    const [inputs, setInputs] = useState({phone : "+91 ", email : "@gmail.com", msg: "Type your message here!"});
 
     // console.log("Current State", name);
 
@@ -28,10 +28,24 @@ function MyForm() {
         {/* <label>Name : <input type="text" onChange={(e) => {setName (e.target.value)}} /></label> <br/> */}
 
 
-        <label>Name : <input type="text" name='name' onChange={handleChange} /></label> <br/>
+        <label>Name : <input type="text" name='name' onChange={handleChange} placeholder='username' /></label> <br/>
         <label>Age : <input type="text" name='age' onChange={handleChange} /></label>
         <br/>
-        <label>Email : <input type="text" name='email' onChange={handleChange} /></label>
+        <label>Email : <input type="text" name='email' onChange={handleChange} value={inputs.email} /></label>
+        <br/>
+        <label>Phone : <input type="text" name='phone' onChange={handleChange} value={inputs.phone} /></label>
+        <br/>
+        <label>Country : 
+            <select name='country' onChange={handleChange} value={inputs.country}>
+                <option value="">Select</option>
+                <option value="US">US</option>
+                <option value="India">India</option>
+                <option value="UK">UK</option>
+                <option value="UAE">UAE</option>
+            </select> 
+        </label>
+        <br/>
+        <label>Message : <textarea value={inputs.msg} name="msg" onChange={handleChange} /> </label>
         <br/>
 
 
