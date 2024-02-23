@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color: rgb(59, 65, 65);
     overflow: auto;
     display: flex;
     color: black;
@@ -22,4 +22,29 @@
     margin-top: -500px;
     margin-left: 500px;
     padding: 1px 16px;
-  }
+}
+
+
+.llink{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+}
+
+.llink:hover{
+    text-decoration: none;
+    color: rgb(98, 150, 229);
+}
+
+.sidebar-list-content{
+    display:none;
+    /* margin-top: -500px;
+    margin-left: 500px;
+    padding: 1px 16px; */
+}
+
+.show-content{
+    margin-top: -800px;
+    margin-left: 500px;
+    padding: 1px 16px;
+}

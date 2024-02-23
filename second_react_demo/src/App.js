@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import Home from './pages/Home';
 import Abouts from './pages/Abouts';
@@ -12,27 +12,33 @@ function App() {
     <Router>
         <div>
             <header>
-              <ul className='ulist'>
-                  <li className='lists'>
-                      <Link to="/Home">Home</Link>
-                  </li>
-                  <li className='lists'>
-                      <Link to="/Abouts">
-                          About Us
-                      </Link>
-                  </li>
-                  <li className='lists'>
-                      <Link to="/Contact">
-                          Contact Us
-                      </Link>
-                  </li>
-                  <li className='lists'>
-                      <Link to="/Team">
-                          Team
-                      </Link>
-                  </li>
-              </ul>
+
+            <div className='l'>
+                <img src={logo} className="App-logo" alt="logo" />
+            </div>
+
+            <ul className='ulist'>
+                <li className='lists'>
+                    <Link to="/Home" className='lists'>Home</Link>
+                </li>
+                <li className='lists'>
+                    <Link to="/Abouts" className='lists'>
+                        About Us
+                    </Link>
+                </li>
+                <li className='lists'>
+                    <Link to="/Contact" className='lists'>
+                        Contact Us
+                    </Link>
+                </li>
+                <li className='lists'>
+                    <Link to="/Team" className='lists'>
+                        Team
+                    </Link>
+                </li>
+            </ul>
             </header>
+         
             <Routes>
                 <Route
                     exact
