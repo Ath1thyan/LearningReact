@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  color: aliceblue;
+}
