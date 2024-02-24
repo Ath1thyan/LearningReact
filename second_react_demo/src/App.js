@@ -45,31 +45,31 @@ function App() {
                     exact
                     path="/"
                     element={<Home />}
-                    errorElement= {<ErrorPage />}
+                    
                 ></Route>
                 <Route
                     exact
                     path="/Home"
                     element={<Home />}
-                    errorElement= {<ErrorPage />}
+                    
                 ></Route>
                 <Route
                     exact
                     path="/Abouts"
                     element={<Abouts />}
-                    errorElement= {<ErrorPage />}
+                    
                 ></Route>
                 <Route
                     exact
                     path="/Contact"
                     element={<Contact />}
-                    errorElement= {<ErrorPage />}
+                    
                 ></Route>
                 <Route
                     exact
                     path="/Team"
                     element={<Team />}
-                    errorElement= {<ErrorPage />}
+                    
                 ></Route>
                 <Route
                     path="*"
