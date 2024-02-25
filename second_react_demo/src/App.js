@@ -6,6 +6,7 @@ import Team from './pages/Team';
 import Contact from './pages/Contact';
 import ErrorPage from './pages/ErrorPage';
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import Login from './pages/Login';
 
 
 function App() {
@@ -35,6 +36,11 @@ function App() {
                 <li className='lists'>
                     <Link to="/Team" className='lists'>
                         Team
+                    </Link>
+                </li>
+                <li className='login'>
+                    <Link to="/login" className='lists'>
+                        Login
                     </Link>
                 </li>
             </ul>
@@ -69,6 +75,12 @@ function App() {
                     exact
                     path="/Team"
                     element={<Team />}
+                    
+                ></Route>
+                <Route
+                    exact
+                    path="/login"
+                    element={<Login />}
                     
                 ></Route>
                 <Route
