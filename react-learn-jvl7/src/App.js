@@ -9,7 +9,6 @@ const AppToaster = Toaster.create({
 })
 
 
-
 function App() {
 
   const [users, setUsers] = useState([]);
