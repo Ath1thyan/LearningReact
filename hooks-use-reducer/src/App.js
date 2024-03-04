@@ -1,28 +1,37 @@
-// import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+import { useReducer } from 'react';
+
+function reducer(state, action) {
+  switch (action.method) {
+    case 'inc':
+      return { count: state.count +1 }
+
+    case 'dec':
+      return { count: state.count -1 }
+
+    default :
+      return state.count;
+  }
+}
+
 
 function App() {
-  const [count, setCount] = useState(5);
+  const [state, dispatch] = useReducer(reducer, { count: 0 })
+
 
   function decCount(){
-    setCount(count-1);
+    dispatch( { method: 'dec'})
   }
 
-  // const incCount = () => {
-  //   setCount(count+1);
-  // }
-
   const incCount = () => {
-    setCount((previousVal) => previousVal + 1);
-    setCount(previousVal => previousVal + 1);
+    dispatch( { method : 'inc' } );
   }
 
 
   return (
     <div className="App">
       <button onClick={decCount} >-</button>
-      <span>{count}</span>
+      <span>{state.count}</span>
       <button onClick={incCount} >+</button>
     </div>
   );
