@@ -1,8 +1,10 @@
 import './App.css';
-import LoadashEx from './LodashEx';
+import Counter from './features/counter/Counter';
 
 function App() {
-  <LoadashEx />
+  return <main>
+    <Counter />
+  </main>
 }
 
 export default App;
