@@ -1,6 +1,7 @@
 import './App.css';
 import React from'react';
 import Student from './Student';
+import ComponentUpdate from './ComponentUpdate';
 // import Car from './Car';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       {/* <Car brand="Ford" />
       <Car brand="Volvo" /> */}
-      <Student/>
+      {/* <Student/> */}
+      <ComponentUpdate/>
     </div>
   )
 }

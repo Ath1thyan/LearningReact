@@ -4,11 +4,11 @@ const Student = () => {
     const m1 = 76;
     const m2 = 82;
     const m3 = 79;
-    const [state, setState] = useState();
+    const [state, setState] = useState(0);
 
     function handleClick(){
         setState(m1+m2+m3)
-    }
+    };
     
     return <>
         <p>Student id: 1</p>
