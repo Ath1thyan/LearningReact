@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 const MiniCalc = () => {
     const [num1, setnum1] = useState();
@@ -7,6 +7,7 @@ const MiniCalc = () => {
     const [diff, setdiff] = useState(0);
     const [prd, setprd] = useState(0);
     const [qt, setqt] = useState(0);
+    const [count, steCount] = useState(0);
 
     function addNumbers(){
         // setnum1(Number(document.getElementById("num1").value));
@@ -46,12 +47,16 @@ const MiniCalc = () => {
             <button onClick={subtractNumbers} > Subtract </button> 
             <button onClick={multiplyNumbers} > Multiply </button>  
             <button onClick={divideNumbers} > Divide </button>  
+            <h2>Count</h2>
+            <button onClick={ ()=> steCount(count+1) }>count</button>
 
             <h2>Result</h2>
             <p id="sumResult">Addition: {sum}</p>
             <p id="subResult">Subtraction: {diff}</p>
             <p id="mulResult">Multiplication: {prd}</p>
             <p id="divResult">Division: {qt}</p>
+            <h2>Count</h2>
+            <p>{count}</p>
         </div>
     )
 
