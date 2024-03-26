@@ -1,7 +1,9 @@
 import './App.css';
 import React from'react';
-import Student from './Student';
-import ComponentUpdate from './ComponentUpdate';
+// import TableEx from './TableEx';
+import MiniCalc from './MiniCalc';
+// import Student from './Student';
+// import ComponentUpdate from './ComponentUpdate';
 // import Car from './Car';
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
       {/* <Car brand="Ford" />
       <Car brand="Volvo" /> */}
       {/* <Student/> */}
-      <ComponentUpdate/>
+      {/* <ComponentUpdate/> */}
+      {/* <TableEx/> */}
+      <MiniCalc />
     </div>
   )
 }
