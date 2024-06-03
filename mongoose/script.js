@@ -7,21 +7,29 @@ main().catch(err => console.log(`Error connecting DB ${err}`))
 async function main() {
     await mongoose.connect('mongodb://127.0.0.1:27017/mongoose');
     console.log('Connected to DB');
-    const user = await User.create({
-        name: "Athi", 
-        age: 25,
-        email: "gfga@jghjfg.com",
-        created_at: Date.now(),
+    // const user = await User.create({
+    //     name: "Athi", 
+    //     age: 25,
+    //     email: "gfga@jghjfg.com",
+    //     created_at: Date.now(),
         // updated_at: Date.now(),
         // object_id: mongoose.Types.ObjectId(),
-        string: ["a", "b", "c"],
-        address: {
-            street: "123",
-            city: "Bangalore",
-            state: "Karnataka",
-            zip: "560076"
-        }
-    })
+    //     string: ["a", "b", "c"],
+    //     address: {
+    //         street: "123",
+    //         city: "Bangalore",
+    //         state: "Karnataka",
+    //         zip: "560076"
+    //     }
+    // })
+    // const user = await User.findOne({name:"Athi"})
+    // user.sayHi();
+    // const user = await User.findByName("Athi")
+
+    // const user = await User.find().byName("athi")
+    // const user = await User.findOne({name: "Athi"})
+    // console.log(User.namedEmail)
+    user.save()
     console.log(user);
 }
 

@@ -23,7 +23,7 @@ const LearnComponents = (props) => {
 
 LearnComponents.propTypes ={
     name: propTypes.string.isRequired,
-    age: propTypes.number.isRequired,
+    age: propTypes.number,
     gender: propTypes.bool.isRequired,
 }
 
